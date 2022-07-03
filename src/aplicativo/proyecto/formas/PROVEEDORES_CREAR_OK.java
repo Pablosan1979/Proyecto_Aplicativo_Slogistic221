@@ -8,12 +8,12 @@ package aplicativo.proyecto.formas;
  *
  * @author santa
  */
-public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
+public class PROVEEDORES_CREAR_OK extends javax.swing.JFrame {
 
     /**
      * Creates new form FACTURAS
      */
-    public PERSONAL_CREAR_OK() {
+    public PROVEEDORES_CREAR_OK() {
         initComponents();
     }
 
@@ -29,22 +29,26 @@ public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        ID_Personal = new javax.swing.JLabel();
-        Txt_ID_Personal = new javax.swing.JTextField();
-        Nombre = new javax.swing.JLabel();
+        Id_Proveedor = new javax.swing.JLabel();
+        Txt_ID_Proveedor = new javax.swing.JTextField();
+        Razon_Social = new javax.swing.JLabel();
         Cargo = new javax.swing.JLabel();
         F_Ingreso = new javax.swing.JLabel();
         Txt_FIngreso = new javax.swing.JFormattedTextField();
         Bt_Guardar = new javax.swing.JButton();
         Bt_Cancelar = new javax.swing.JButton();
-        Txt_Cargo = new javax.swing.JTextField();
-        Txt_Nombre = new javax.swing.JTextField();
-        Area = new javax.swing.JButton();
-        Select_Area = new javax.swing.JComboBox<>();
+        Txt_Nit = new javax.swing.JTextField();
+        Txt_Razon_Social = new javax.swing.JTextField();
         Estado = new javax.swing.JButton();
         Select_Estado = new javax.swing.JComboBox<>();
         F_Retiro = new javax.swing.JLabel();
         Txt_FRetiro = new javax.swing.JFormattedTextField();
+        Direccion = new javax.swing.JLabel();
+        Txt_Direccion = new javax.swing.JTextField();
+        Telefono = new javax.swing.JLabel();
+        Txt_Telefono = new javax.swing.JTextField();
+        Contacto = new javax.swing.JLabel();
+        Txt_Contacto = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -58,27 +62,27 @@ public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Crear Personal");
 
-        ID_Personal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ID_Personal.setText("Id Personal");
-        ID_Personal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Id_Proveedor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Id_Proveedor.setText("Id Proveedor");
+        Id_Proveedor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        Txt_ID_Personal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        Txt_ID_Personal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        Txt_ID_Personal.addActionListener(new java.awt.event.ActionListener() {
+        Txt_ID_Proveedor.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_ID_Proveedor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_ID_Proveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Txt_ID_PersonalActionPerformed(evt);
+                Txt_ID_ProveedorActionPerformed(evt);
             }
         });
 
-        Nombre.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Nombre.setText("Nombre");
-        Nombre.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        Nombre.setMaximumSize(new java.awt.Dimension(72, 20));
-        Nombre.setMinimumSize(new java.awt.Dimension(72, 20));
-        Nombre.setPreferredSize(new java.awt.Dimension(72, 20));
+        Razon_Social.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Razon_Social.setText("Razon Social");
+        Razon_Social.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Razon_Social.setMaximumSize(new java.awt.Dimension(72, 20));
+        Razon_Social.setMinimumSize(new java.awt.Dimension(72, 20));
+        Razon_Social.setPreferredSize(new java.awt.Dimension(72, 20));
 
         Cargo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Cargo.setText("Cargo");
+        Cargo.setText("Nit");
         Cargo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Cargo.setMaximumSize(new java.awt.Dimension(72, 20));
         Cargo.setMinimumSize(new java.awt.Dimension(72, 20));
@@ -105,33 +109,21 @@ public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
         Bt_Cancelar.setText("Cancelar");
         Bt_Cancelar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        Txt_Cargo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        Txt_Cargo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        Txt_Cargo.addActionListener(new java.awt.event.ActionListener() {
+        Txt_Nit.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_Nit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_Nit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Txt_CargoActionPerformed(evt);
+                Txt_NitActionPerformed(evt);
             }
         });
 
-        Txt_Nombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        Txt_Nombre.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        Txt_Nombre.addActionListener(new java.awt.event.ActionListener() {
+        Txt_Razon_Social.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_Razon_Social.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_Razon_Social.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Txt_NombreActionPerformed(evt);
+                Txt_Razon_SocialActionPerformed(evt);
             }
         });
-
-        Area.setBackground(new java.awt.Color(242, 242, 242));
-        Area.setText("Area");
-        Area.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        Area.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AreaActionPerformed(evt);
-            }
-        });
-
-        Select_Area.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Perfiles", "Partes", "Armado", "Patio Materia Prima", "Patio Producto Terminado", "Soldadura", "Oficinas Produccion", "Oficinas Administrativas", "Porteria 1", "Porteria 2", "Pintura", "Despachos" }));
-        Select_Area.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Estado.setBackground(new java.awt.Color(242, 242, 242));
         Estado.setText("Estado");
@@ -157,6 +149,51 @@ public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
         Txt_FRetiro.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getDateInstance(java.text.DateFormat.LONG))));
         Txt_FRetiro.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
+        Direccion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Direccion.setText("Direccion");
+        Direccion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Direccion.setMaximumSize(new java.awt.Dimension(72, 20));
+        Direccion.setMinimumSize(new java.awt.Dimension(72, 20));
+        Direccion.setPreferredSize(new java.awt.Dimension(72, 20));
+
+        Txt_Direccion.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_Direccion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_Direccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Txt_DireccionActionPerformed(evt);
+            }
+        });
+
+        Telefono.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Telefono.setText("Telefono");
+        Telefono.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Telefono.setMaximumSize(new java.awt.Dimension(72, 20));
+        Telefono.setMinimumSize(new java.awt.Dimension(72, 20));
+        Telefono.setPreferredSize(new java.awt.Dimension(72, 20));
+
+        Txt_Telefono.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_Telefono.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_Telefono.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Txt_TelefonoActionPerformed(evt);
+            }
+        });
+
+        Contacto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Contacto.setText("Contacto");
+        Contacto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Contacto.setMaximumSize(new java.awt.Dimension(72, 20));
+        Contacto.setMinimumSize(new java.awt.Dimension(72, 20));
+        Contacto.setPreferredSize(new java.awt.Dimension(72, 20));
+
+        Txt_Contacto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_Contacto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_Contacto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Txt_ContactoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -167,29 +204,18 @@ public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(ID_Personal, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Id_Proveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Txt_ID_Personal))
+                                .addComponent(Txt_ID_Proveedor))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Razon_Social, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(12, 12, 12)
-                                .addComponent(Txt_Nombre))))
+                                .addComponent(Txt_Razon_Social))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Cargo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(12, 12, 12)
-                                .addComponent(Txt_Cargo))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(F_Ingreso, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Txt_FIngreso))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Area, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Cargo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(Select_Area, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(Txt_Nit))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(288, 288, 288)
                         .addComponent(Bt_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -205,13 +231,30 @@ public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Direccion, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(Txt_Direccion))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(F_Ingreso, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Txt_FIngreso)
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(Estado, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
                         .addComponent(Select_Estado, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(F_Retiro, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Txt_FRetiro))))
+                        .addComponent(Txt_FRetiro))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(Txt_Telefono))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Contacto, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(Txt_Contacto))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,20 +268,28 @@ public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(ID_Personal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Txt_ID_Personal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Id_Proveedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Txt_ID_Proveedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Txt_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Razon_Social, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Txt_Razon_Social, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Cargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Txt_Cargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Txt_Nit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Area)
-                    .addComponent(Select_Area, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Txt_Direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Txt_Telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Contacto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Txt_Contacto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Estado)
@@ -251,11 +302,11 @@ public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(F_Retiro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Txt_FRetiro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
+                .addGap(52, 52, 52)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Bt_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Bt_Cancelar))
-                .addGap(167, 167, 167))
+                .addGap(90, 90, 90))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -272,25 +323,33 @@ public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Txt_ID_PersonalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_ID_PersonalActionPerformed
+    private void Txt_ID_ProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_ID_ProveedorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Txt_ID_PersonalActionPerformed
+    }//GEN-LAST:event_Txt_ID_ProveedorActionPerformed
 
-    private void Txt_NombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_NombreActionPerformed
+    private void Txt_Razon_SocialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_Razon_SocialActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Txt_NombreActionPerformed
+    }//GEN-LAST:event_Txt_Razon_SocialActionPerformed
 
-    private void Txt_CargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_CargoActionPerformed
+    private void Txt_NitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_NitActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Txt_CargoActionPerformed
-
-    private void AreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AreaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AreaActionPerformed
+    }//GEN-LAST:event_Txt_NitActionPerformed
 
     private void EstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EstadoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_EstadoActionPerformed
+
+    private void Txt_DireccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_DireccionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txt_DireccionActionPerformed
+
+    private void Txt_TelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_TelefonoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txt_TelefonoActionPerformed
+
+    private void Txt_ContactoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_ContactoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txt_ContactoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -309,14 +368,46 @@ public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PERSONAL_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PROVEEDORES_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PERSONAL_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PROVEEDORES_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PERSONAL_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PROVEEDORES_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PERSONAL_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PROVEEDORES_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -353,28 +444,32 @@ public class PERSONAL_CREAR_OK extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PERSONAL_CREAR_OK().setVisible(true);
+                new PROVEEDORES_CREAR_OK().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Area;
     private javax.swing.JButton Bt_Cancelar;
     private javax.swing.JButton Bt_Guardar;
     private javax.swing.JLabel Cargo;
+    private javax.swing.JLabel Contacto;
+    private javax.swing.JLabel Direccion;
     private javax.swing.JButton Estado;
     private javax.swing.JLabel F_Ingreso;
     private javax.swing.JLabel F_Retiro;
-    private javax.swing.JLabel ID_Personal;
-    private javax.swing.JLabel Nombre;
-    private javax.swing.JComboBox<String> Select_Area;
+    private javax.swing.JLabel Id_Proveedor;
+    private javax.swing.JLabel Razon_Social;
     private javax.swing.JComboBox<String> Select_Estado;
-    private javax.swing.JTextField Txt_Cargo;
+    private javax.swing.JLabel Telefono;
+    private javax.swing.JTextField Txt_Contacto;
+    private javax.swing.JTextField Txt_Direccion;
     private javax.swing.JFormattedTextField Txt_FIngreso;
     private javax.swing.JFormattedTextField Txt_FRetiro;
-    private javax.swing.JTextField Txt_ID_Personal;
-    private javax.swing.JTextField Txt_Nombre;
+    private javax.swing.JTextField Txt_ID_Proveedor;
+    private javax.swing.JTextField Txt_Nit;
+    private javax.swing.JTextField Txt_Razon_Social;
+    private javax.swing.JTextField Txt_Telefono;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
