@@ -8,12 +8,12 @@ package aplicativo.proyecto.formas;
  *
  * @author santa
  */
-public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
+public class SERVICIOS_CREAR_OK extends javax.swing.JFrame {
 
     /**
      * Creates new form FACTURAS
      */
-    public PROGRAMACION_CREAR_OK() {
+    public SERVICIOS_CREAR_OK() {
         initComponents();
     }
 
@@ -42,11 +42,13 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
         Bt_Cancelar = new javax.swing.JButton();
         Area_Maquina = new javax.swing.JButton();
         Select_Maquinas = new javax.swing.JComboBox<>();
-        Bt_Agregar = new javax.swing.JButton();
-        Txt_Descripcion = new javax.swing.JTextField();
         Select_Area_Maquina = new javax.swing.JComboBox<>();
         Select_Solicitante = new javax.swing.JComboBox<>();
         Select_Area_Solicitant = new javax.swing.JComboBox<>();
+        Tipo_Daño = new javax.swing.JButton();
+        Select_Tipo_Daño = new javax.swing.JComboBox<>();
+        Descripcion_Daño = new javax.swing.JLabel();
+        Txt_Descripcion_Daño = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -58,7 +60,7 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Crear Programación");
+        jLabel2.setText("Crear Servicio");
 
         Consecutivo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Consecutivo.setText("Consecutivo");
@@ -122,6 +124,7 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
         Bt_Cancelar.setText("Cancelar");
         Bt_Cancelar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(102, 102, 102), null, null));
 
+        Area_Maquina.setBackground(new java.awt.Color(242, 242, 242));
         Area_Maquina.setText("Area");
         Area_Maquina.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Area_Maquina.addActionListener(new java.awt.event.ActionListener() {
@@ -133,16 +136,6 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
         Select_Maquinas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Soldadores Mig", "Soldadores Electrodo", "Soldadores Stud", "Pulidoras", "Puentes gruas", " " }));
         Select_Maquinas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        Bt_Agregar.setText("Agregar");
-        Bt_Agregar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        Txt_Descripcion.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        Txt_Descripcion.setActionCommand("<Not Set>");
-        Txt_Descripcion.setAutoscrolls(false);
-        Txt_Descripcion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        Txt_Descripcion.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        Txt_Descripcion.setDragEnabled(true);
-
         Select_Area_Maquina.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Perfiles", "Partes", "Armado", "Patio Materia Prima", "Patio Producto Terminado", "Soldadura", "Oficinas Produccion", "Oficinas Administrativas", "Porteria 1", "Porteria 2", "Pintura", "Despachos" }));
         Select_Area_Maquina.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -152,31 +145,42 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
         Select_Area_Solicitant.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Perfiles", "Partes", "Armado", "Patio Materia Prima", "Patio Producto Terminado", "Soldadura", "Oficinas Produccion", "Oficinas Administrativas", "Porteria 1", "Porteria 2", "Pintura", "Despachos" }));
         Select_Area_Solicitant.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        Tipo_Daño.setBackground(new java.awt.Color(242, 242, 242));
+        Tipo_Daño.setText("Tipo Daño");
+        Tipo_Daño.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Tipo_Daño.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Tipo_DañoActionPerformed(evt);
+            }
+        });
+
+        Select_Tipo_Daño.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mecanico", "Electrico", "Electronico", "Otro", " " }));
+        Select_Tipo_Daño.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        Descripcion_Daño.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Descripcion_Daño.setText("Descripcion Daño");
+        Descripcion_Daño.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        Txt_Descripcion_Daño.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_Descripcion_Daño.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_Descripcion_Daño.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Txt_Descripcion_DañoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Bt_Agregar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(Txt_Descripcion)
-                        .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Area_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Select_Solicitante, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Select_Area_Solicitant, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(12, 12, 12))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(Consecutivo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -189,23 +193,38 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(Maquinas, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(12, 12, 12)
-                                .addComponent(Select_Maquinas, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addContainerGap())
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(F_Solicitud, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Txt_FSolicitud)
-                        .addContainerGap())
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(F_Atencion, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Txt_FAtencion)
-                        .addContainerGap())
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(Bt_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Bt_Cancelar)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(Select_Maquinas, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Tipo_Daño, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(Select_Tipo_Daño, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Area_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Select_Solicitante, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Select_Area_Solicitant, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(6, 6, 6))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(F_Solicitud, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Txt_FSolicitud))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(F_Atencion, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Txt_FAtencion))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Bt_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Bt_Cancelar)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Descripcion_Daño, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Txt_Descripcion_Daño, javax.swing.GroupLayout.PREFERRED_SIZE, 589, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -229,14 +248,18 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Area_Maquina)
                     .addComponent(Select_Area_Maquina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Bt_Agregar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Txt_Descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Tipo_Daño)
+                    .addComponent(Select_Tipo_Daño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Descripcion_Daño)
+                    .addComponent(Txt_Descripcion_Daño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Solicitante, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Select_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(Select_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Area_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -253,7 +276,7 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Bt_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Bt_Cancelar))
-                .addGap(96, 96, 96))
+                .addGap(124, 124, 124))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -278,6 +301,14 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Txt_ConsecutivoActionPerformed
 
+    private void Tipo_DañoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tipo_DañoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Tipo_DañoActionPerformed
+
+    private void Txt_Descripcion_DañoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_Descripcion_DañoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txt_Descripcion_DañoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -295,14 +326,30 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PROGRAMACION_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SERVICIOS_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PROGRAMACION_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SERVICIOS_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PROGRAMACION_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SERVICIOS_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PROGRAMACION_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SERVICIOS_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -323,7 +370,7 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PROGRAMACION_CREAR_OK().setVisible(true);
+                new SERVICIOS_CREAR_OK().setVisible(true);
             }
         });
     }
@@ -331,10 +378,10 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Area_Maquina;
     private javax.swing.JLabel Area_Solicitante;
-    private javax.swing.JButton Bt_Agregar;
     private javax.swing.JButton Bt_Cancelar;
     private javax.swing.JButton Bt_Guardar;
     private javax.swing.JLabel Consecutivo;
+    private javax.swing.JLabel Descripcion_Daño;
     private javax.swing.JLabel F_Atencion;
     private javax.swing.JLabel F_Solicitud;
     private javax.swing.JLabel Maquinas;
@@ -342,9 +389,11 @@ public class PROGRAMACION_CREAR_OK extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> Select_Area_Solicitant;
     private javax.swing.JComboBox<String> Select_Maquinas;
     private javax.swing.JComboBox<String> Select_Solicitante;
+    private javax.swing.JComboBox<String> Select_Tipo_Daño;
     private javax.swing.JLabel Solicitante;
+    private javax.swing.JButton Tipo_Daño;
     private javax.swing.JTextField Txt_Consecutivo;
-    private javax.swing.JTextField Txt_Descripcion;
+    private javax.swing.JTextField Txt_Descripcion_Daño;
     private javax.swing.JFormattedTextField Txt_FAtencion;
     private javax.swing.JFormattedTextField Txt_FSolicitud;
     private javax.swing.JLabel jLabel1;
