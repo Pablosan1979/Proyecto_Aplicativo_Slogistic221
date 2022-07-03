@@ -62,7 +62,7 @@ public class MAQUINAS_CREAR_OK extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Crear Facturas");
+        jLabel2.setText("Crear Maquinas");
 
         Consecutivo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Consecutivo.setText("Consecutivo");
