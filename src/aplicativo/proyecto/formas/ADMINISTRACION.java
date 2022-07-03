@@ -27,10 +27,10 @@ public class ADMINISTRACION extends javax.swing.JFrame {
     private void initComponents() {
 
         Principal = new javax.swing.JPanel();
-        Campo_Busqueda = new javax.swing.JTextField();
-        Buscar = new javax.swing.JButton();
-        Crear = new javax.swing.JButton();
-        Modificar = new javax.swing.JButton();
+        Txt_Busqueda = new javax.swing.JTextField();
+        Bt_Buscar = new javax.swing.JButton();
+        Bt_Crear = new javax.swing.JButton();
+        Bt_Modificar = new javax.swing.JButton();
         Slogistic221 = new javax.swing.JLabel();
         Modulo_Administracion = new javax.swing.JLabel();
 
@@ -39,27 +39,27 @@ public class ADMINISTRACION extends javax.swing.JFrame {
         Principal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Principal.setPreferredSize(new java.awt.Dimension(2000, 2000));
 
-        Campo_Busqueda.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        Campo_Busqueda.addActionListener(new java.awt.event.ActionListener() {
+        Txt_Busqueda.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_Busqueda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Campo_BusquedaActionPerformed(evt);
+                Txt_BusquedaActionPerformed(evt);
             }
         });
 
-        Buscar.setText("Buscar");
-        Buscar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        Buscar.addActionListener(new java.awt.event.ActionListener() {
+        Bt_Buscar.setText("Buscar");
+        Bt_Buscar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Bt_Buscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BuscarActionPerformed(evt);
+                Bt_BuscarActionPerformed(evt);
             }
         });
 
-        Crear.setText("Crear");
-        Crear.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Bt_Crear.setText("Crear");
+        Bt_Crear.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        Modificar.setText("Modificar");
-        Modificar.setAutoscrolls(true);
-        Modificar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Bt_Modificar.setText("Modificar");
+        Bt_Modificar.setAutoscrolls(true);
+        Bt_Modificar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Slogistic221.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplicativo/proyecto/formas/SLOGISTIC221.jpg"))); // NOI18N
 
@@ -81,14 +81,14 @@ public class ADMINISTRACION extends javax.swing.JFrame {
                             .addGroup(PrincipalLayout.createSequentialGroup()
                                 .addGap(41, 41, 41)
                                 .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(Campo_Busqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Txt_Busqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Modulo_Administracion, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(PrincipalLayout.createSequentialGroup()
                                 .addGap(201, 201, 201)
                                 .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Crear, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Modificar))))
+                                    .addComponent(Bt_Crear, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Bt_Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Bt_Modificar))))
                         .addGap(0, 29, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -100,13 +100,13 @@ public class ADMINISTRACION extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(Modulo_Administracion, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38)
-                .addComponent(Campo_Busqueda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Txt_Busqueda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(Buscar)
+                .addComponent(Bt_Buscar)
                 .addGap(18, 18, 18)
-                .addComponent(Crear)
+                .addComponent(Bt_Crear)
                 .addGap(18, 18, 18)
-                .addComponent(Modificar)
+                .addComponent(Bt_Modificar)
                 .addContainerGap(85, Short.MAX_VALUE))
         );
 
@@ -124,13 +124,13 @@ public class ADMINISTRACION extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Campo_BusquedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Campo_BusquedaActionPerformed
+    private void Txt_BusquedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_BusquedaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Campo_BusquedaActionPerformed
+    }//GEN-LAST:event_Txt_BusquedaActionPerformed
 
-    private void BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarActionPerformed
+    private void Bt_BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_BuscarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BuscarActionPerformed
+    }//GEN-LAST:event_Bt_BuscarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -168,12 +168,12 @@ public class ADMINISTRACION extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Buscar;
-    private javax.swing.JTextField Campo_Busqueda;
-    private javax.swing.JButton Crear;
-    private javax.swing.JButton Modificar;
+    private javax.swing.JButton Bt_Buscar;
+    private javax.swing.JButton Bt_Crear;
+    private javax.swing.JButton Bt_Modificar;
     private javax.swing.JLabel Modulo_Administracion;
     private javax.swing.JPanel Principal;
     private javax.swing.JLabel Slogistic221;
+    private javax.swing.JTextField Txt_Busqueda;
     // End of variables declaration//GEN-END:variables
 }
