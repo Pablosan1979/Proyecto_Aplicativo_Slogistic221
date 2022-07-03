@@ -33,13 +33,13 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         Maquinas = new javax.swing.JLabel();
         Solicitante = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        Txt_Solicitante = new javax.swing.JTextField();
         Area_Solicitante = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jFormattedTextField2 = new javax.swing.JFormattedTextField();
+        Txt_Area_Solicitante = new javax.swing.JTextField();
+        F_Solicitud = new javax.swing.JLabel();
+        Txt_FSolicitud = new javax.swing.JFormattedTextField();
+        F_Atencion = new javax.swing.JLabel();
+        Txt_FAtencion = new javax.swing.JFormattedTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         Area_Maquina = new javax.swing.JButton();
@@ -81,8 +81,8 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         Solicitante.setMinimumSize(new java.awt.Dimension(72, 20));
         Solicitante.setPreferredSize(new java.awt.Dimension(72, 20));
 
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_Solicitante.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_Solicitante.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Area_Solicitante.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Area_Solicitante.setText("Area");
@@ -91,28 +91,28 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         Area_Solicitante.setMinimumSize(new java.awt.Dimension(72, 20));
         Area_Solicitante.setPreferredSize(new java.awt.Dimension(72, 20));
 
-        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_Area_Solicitante.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_Area_Solicitante.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Fecha Solicitud");
-        jLabel9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jLabel9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jLabel9.setMaximumSize(new java.awt.Dimension(72, 20));
-        jLabel9.setMinimumSize(new java.awt.Dimension(72, 20));
-        jLabel9.setPreferredSize(new java.awt.Dimension(72, 20));
+        F_Solicitud.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        F_Solicitud.setText("Fecha Solicitud");
+        F_Solicitud.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        F_Solicitud.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        F_Solicitud.setMaximumSize(new java.awt.Dimension(72, 20));
+        F_Solicitud.setMinimumSize(new java.awt.Dimension(72, 20));
+        F_Solicitud.setPreferredSize(new java.awt.Dimension(72, 20));
 
-        jFormattedTextField1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getDateInstance(java.text.DateFormat.LONG))));
-        jFormattedTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_FSolicitud.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_FSolicitud.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getDateInstance(java.text.DateFormat.LONG))));
+        Txt_FSolicitud.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Fecha Atencion");
-        jLabel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        F_Atencion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        F_Atencion.setText("Fecha Atencion");
+        F_Atencion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jFormattedTextField2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jFormattedTextField2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getDateInstance(java.text.DateFormat.LONG))));
-        jFormattedTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_FAtencion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_FAtencion.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getDateInstance(java.text.DateFormat.LONG))));
+        Txt_FAtencion.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jButton1.setText("Guardar");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(102, 102, 102), null, null));
@@ -167,11 +167,11 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField3))
+                                .addComponent(Txt_Solicitante))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(Area_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField4)))
+                                .addComponent(Txt_Area_Solicitante)))
                         .addContainerGap())))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
@@ -198,15 +198,15 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                 .addGap(142, 142, 142))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(F_Solicitud, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jFormattedTextField1)
+                .addComponent(Txt_FSolicitud)
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(F_Atencion, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jFormattedTextField2)
+                .addComponent(Txt_FAtencion)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -238,19 +238,19 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Txt_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Area_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Txt_Area_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(F_Solicitud, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Txt_FSolicitud, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(F_Atencion)
+                    .addComponent(Txt_FAtencion, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(64, 64, 64)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -319,22 +319,22 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
     private javax.swing.JLabel Area_Solicitante;
     private javax.swing.JButton Bt_Agregar;
     private javax.swing.JLabel Consecutivo;
+    private javax.swing.JLabel F_Atencion;
+    private javax.swing.JLabel F_Solicitud;
     private javax.swing.JLabel Maquinas;
     private javax.swing.JComboBox<String> Select_Maquinas;
     private javax.swing.JLabel Solicitante;
+    private javax.swing.JTextField Txt_Area_Solicitante;
     private javax.swing.JTextField Txt_Descripcion;
+    private javax.swing.JFormattedTextField Txt_FAtencion;
+    private javax.swing.JFormattedTextField Txt_FSolicitud;
+    private javax.swing.JTextField Txt_Solicitante;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
-    private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 }
