@@ -60,7 +60,7 @@ public class PROVEEDORES_CREAR_OK extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Crear Personal");
+        jLabel2.setText("Crear Proveedor");
 
         Id_Proveedor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Id_Proveedor.setText("Id Proveedor");
