@@ -28,7 +28,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" pref="564" max="32767" attributes="0"/>
+          <Component id="jPanel1" alignment="0" pref="578" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -58,18 +58,15 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="Solicitante" min="-2" pref="72" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Txt_Solicitante" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="Area_Solicitante" min="-2" pref="72" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Txt_Area_Solicitante" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="Area_Solicitante" alignment="0" min="-2" pref="72" max="-2" attributes="0"/>
+                              <Component id="Solicitante" alignment="0" min="-2" pref="72" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="Select_Solicitante" max="32767" attributes="0"/>
+                              <Component id="Select_Area_Solicitant" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -131,7 +128,7 @@
                           <Component id="jLabel2" min="-2" pref="43" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="8" max="32767" attributes="0"/>
+                  <EmptySpace pref="10" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="Consecutivo" max="32767" attributes="0"/>
                       <Component id="Txt_Consecutivo" min="-2" max="-2" attributes="0"/>
@@ -151,26 +148,26 @@
                   <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                   <Component id="Txt_Descripcion" min="-2" pref="58" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="Solicitante" min="-2" max="-2" attributes="0"/>
-                      <Component id="Txt_Solicitante" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="Solicitante" max="32767" attributes="0"/>
+                      <Component id="Select_Solicitante" pref="0" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="Area_Solicitante" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="Txt_Area_Solicitante" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="Select_Area_Solicitant" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="F_Solicitud" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
                       <Component id="Txt_FSolicitud" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="F_Atencion" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Txt_FAtencion" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="Bt_Guardar" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Bt_Cancelar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -263,16 +260,6 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="Txt_Solicitante">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-                <BevelBorder/>
-              </Border>
-            </Property>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JLabel" name="Area_Solicitante">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
@@ -290,16 +277,6 @@
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[72, 20]"/>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="Txt_Area_Solicitante">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-                <BevelBorder/>
-              </Border>
             </Property>
           </Properties>
         </Component>
@@ -456,6 +433,56 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="jComboBox2">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="12">
+                <StringItem index="0" value="Perfiles"/>
+                <StringItem index="1" value="Partes"/>
+                <StringItem index="2" value="Armado"/>
+                <StringItem index="3" value="Patio Materia Prima"/>
+                <StringItem index="4" value="Patio Producto Terminado"/>
+                <StringItem index="5" value="Soldadura"/>
+                <StringItem index="6" value="Oficinas Produccion"/>
+                <StringItem index="7" value="Oficinas Administrativas"/>
+                <StringItem index="8" value="Porteria 1"/>
+                <StringItem index="9" value="Porteria 2"/>
+                <StringItem index="10" value="Pintura"/>
+                <StringItem index="11" value="Despachos"/>
+              </StringArray>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="Select_Solicitante">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="6">
+                <StringItem index="0" value="Pablo Santacruz"/>
+                <StringItem index="1" value="Jhon Quintero"/>
+                <StringItem index="2" value="Marcus lopez"/>
+                <StringItem index="3" value="Santiago Santacruz"/>
+                <StringItem index="4" value="Pepito Perez"/>
+                <StringItem index="5" value=" "/>
+              </StringArray>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="Select_Area_Solicitant">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="12">

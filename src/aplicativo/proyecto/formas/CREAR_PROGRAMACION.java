@@ -33,9 +33,7 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         Txt_Consecutivo = new javax.swing.JTextField();
         Maquinas = new javax.swing.JLabel();
         Solicitante = new javax.swing.JLabel();
-        Txt_Solicitante = new javax.swing.JTextField();
         Area_Solicitante = new javax.swing.JLabel();
-        Txt_Area_Solicitante = new javax.swing.JTextField();
         F_Solicitud = new javax.swing.JLabel();
         Txt_FSolicitud = new javax.swing.JFormattedTextField();
         F_Atencion = new javax.swing.JLabel();
@@ -47,6 +45,8 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         Bt_Agregar = new javax.swing.JButton();
         Txt_Descripcion = new javax.swing.JTextField();
         jComboBox2 = new javax.swing.JComboBox<>();
+        Select_Solicitante = new javax.swing.JComboBox<>();
+        Select_Area_Solicitant = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -86,18 +86,12 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         Solicitante.setMinimumSize(new java.awt.Dimension(72, 20));
         Solicitante.setPreferredSize(new java.awt.Dimension(72, 20));
 
-        Txt_Solicitante.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        Txt_Solicitante.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
         Area_Solicitante.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Area_Solicitante.setText("Area");
         Area_Solicitante.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Area_Solicitante.setMaximumSize(new java.awt.Dimension(72, 20));
         Area_Solicitante.setMinimumSize(new java.awt.Dimension(72, 20));
         Area_Solicitante.setPreferredSize(new java.awt.Dimension(72, 20));
-
-        Txt_Area_Solicitante.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        Txt_Area_Solicitante.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         F_Solicitud.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         F_Solicitud.setText("Fecha Solicitud");
@@ -152,6 +146,12 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Perfiles", "Partes", "Armado", "Patio Materia Prima", "Patio Producto Terminado", "Soldadura", "Oficinas Produccion", "Oficinas Administrativas", "Porteria 1", "Porteria 2", "Pintura", "Despachos" }));
         jComboBox2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        Select_Solicitante.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pablo Santacruz", "Jhon Quintero", "Marcus lopez", "Santiago Santacruz", "Pepito Perez", " " }));
+        Select_Solicitante.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        Select_Area_Solicitant.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Perfiles", "Partes", "Armado", "Patio Materia Prima", "Patio Producto Terminado", "Soldadura", "Oficinas Produccion", "Oficinas Administrativas", "Porteria 1", "Porteria 2", "Pintura", "Despachos" }));
+        Select_Area_Solicitant.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -169,15 +169,13 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                         .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Txt_Solicitante))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Area_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Txt_Area_Solicitante)))
-                        .addContainerGap())))
+                            .addComponent(Area_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Select_Solicitante, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Select_Area_Solicitant, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(12, 12, 12))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -224,7 +222,7 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(49, 49, 49)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Consecutivo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Txt_Consecutivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -241,22 +239,22 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Txt_Descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Txt_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Solicitante, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Select_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Area_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Txt_Area_Solicitante, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(Select_Area_Solicitant, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(F_Solicitud, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Txt_FSolicitud, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(F_Atencion)
                     .addComponent(Txt_FAtencion, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(64, 64, 64)
+                .addGap(88, 88, 88)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Bt_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Bt_Cancelar))
@@ -271,7 +269,7 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 578, Short.MAX_VALUE)
         );
 
         pack();
@@ -333,14 +331,14 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
     private javax.swing.JLabel F_Atencion;
     private javax.swing.JLabel F_Solicitud;
     private javax.swing.JLabel Maquinas;
+    private javax.swing.JComboBox<String> Select_Area_Solicitant;
     private javax.swing.JComboBox<String> Select_Maquinas;
+    private javax.swing.JComboBox<String> Select_Solicitante;
     private javax.swing.JLabel Solicitante;
-    private javax.swing.JTextField Txt_Area_Solicitante;
     private javax.swing.JTextField Txt_Consecutivo;
     private javax.swing.JTextField Txt_Descripcion;
     private javax.swing.JFormattedTextField Txt_FAtencion;
     private javax.swing.JFormattedTextField Txt_FSolicitud;
-    private javax.swing.JTextField Txt_Solicitante;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
