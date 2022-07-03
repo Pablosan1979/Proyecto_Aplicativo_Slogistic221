@@ -8,12 +8,12 @@ package aplicativo.proyecto.formas;
  *
  * @author santa
  */
-public class CREAR_PROGRAMACION extends javax.swing.JFrame {
+public class CREAR_PROGRAMACION_OK extends javax.swing.JFrame {
 
     /**
      * Creates new form FACTURAS
      */
-    public CREAR_PROGRAMACION() {
+    public CREAR_PROGRAMACION_OK() {
         initComponents();
     }
 
@@ -44,7 +44,7 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         Select_Maquinas = new javax.swing.JComboBox<>();
         Bt_Agregar = new javax.swing.JButton();
         Txt_Descripcion = new javax.swing.JTextField();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        Select_Area_Maquina = new javax.swing.JComboBox<>();
         Select_Solicitante = new javax.swing.JComboBox<>();
         Select_Area_Solicitant = new javax.swing.JComboBox<>();
 
@@ -143,8 +143,8 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         Txt_Descripcion.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         Txt_Descripcion.setDragEnabled(true);
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Perfiles", "Partes", "Armado", "Patio Materia Prima", "Patio Producto Terminado", "Soldadura", "Oficinas Produccion", "Oficinas Administrativas", "Porteria 1", "Porteria 2", "Pintura", "Despachos" }));
-        jComboBox2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Select_Area_Maquina.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Perfiles", "Partes", "Armado", "Patio Materia Prima", "Patio Producto Terminado", "Soldadura", "Oficinas Produccion", "Oficinas Administrativas", "Porteria 1", "Porteria 2", "Pintura", "Despachos" }));
+        Select_Area_Maquina.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Select_Solicitante.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pablo Santacruz", "Jhon Quintero", "Marcus lopez", "Santiago Santacruz", "Pepito Perez", " " }));
         Select_Solicitante.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -186,7 +186,7 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(Area_Maquina, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(Select_Area_Maquina, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(Maquinas, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
@@ -233,7 +233,7 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Area_Maquina)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Select_Area_Maquina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Bt_Agregar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -300,14 +300,18 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CREAR_PROGRAMACION.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CREAR_PROGRAMACION_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CREAR_PROGRAMACION.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CREAR_PROGRAMACION_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CREAR_PROGRAMACION.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CREAR_PROGRAMACION_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CREAR_PROGRAMACION.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CREAR_PROGRAMACION_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -316,7 +320,7 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CREAR_PROGRAMACION().setVisible(true);
+                new CREAR_PROGRAMACION_OK().setVisible(true);
             }
         });
     }
@@ -331,6 +335,7 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
     private javax.swing.JLabel F_Atencion;
     private javax.swing.JLabel F_Solicitud;
     private javax.swing.JLabel Maquinas;
+    private javax.swing.JComboBox<String> Select_Area_Maquina;
     private javax.swing.JComboBox<String> Select_Area_Solicitant;
     private javax.swing.JComboBox<String> Select_Maquinas;
     private javax.swing.JComboBox<String> Select_Solicitante;
@@ -339,7 +344,6 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
     private javax.swing.JTextField Txt_Descripcion;
     private javax.swing.JFormattedTextField Txt_FAtencion;
     private javax.swing.JFormattedTextField Txt_FSolicitud;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
