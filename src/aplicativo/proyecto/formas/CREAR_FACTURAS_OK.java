@@ -8,12 +8,12 @@ package aplicativo.proyecto.formas;
  *
  * @author santa
  */
-public class CREAR_FACTURAS extends javax.swing.JFrame {
+public class CREAR_FACTURAS_OK extends javax.swing.JFrame {
 
     /**
      * Creates new form FACTURAS
      */
-    public CREAR_FACTURAS() {
+    public CREAR_FACTURAS_OK() {
         initComponents();
     }
 
@@ -29,9 +29,9 @@ public class CREAR_FACTURAS extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        Consecutivo = new javax.swing.JLabel();
         Txt_Consecutivo = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        Concepto = new javax.swing.JLabel();
         Txt_Concepto = new javax.swing.JTextField();
         Valor = new javax.swing.JLabel();
         Txt_Valor = new javax.swing.JTextField();
@@ -47,10 +47,10 @@ public class CREAR_FACTURAS extends javax.swing.JFrame {
         Txt_FVencimiento = new javax.swing.JFormattedTextField();
         Bt_Guardar = new javax.swing.JButton();
         Bt_Cancelar = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        Productos = new javax.swing.JButton();
         Select_productos = new javax.swing.JComboBox<>();
         Bt_Agregar = new javax.swing.JButton();
-        jTextField7 = new javax.swing.JTextField();
+        Descripcion = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,19 +64,19 @@ public class CREAR_FACTURAS extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Crear Facturas");
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Consecutivo");
-        jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Consecutivo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Consecutivo.setText("Consecutivo");
+        Consecutivo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Txt_Consecutivo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         Txt_Consecutivo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Concepto");
-        jLabel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jLabel4.setMaximumSize(new java.awt.Dimension(72, 20));
-        jLabel4.setMinimumSize(new java.awt.Dimension(72, 20));
-        jLabel4.setPreferredSize(new java.awt.Dimension(72, 20));
+        Concepto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Concepto.setText("Concepto");
+        Concepto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Concepto.setMaximumSize(new java.awt.Dimension(72, 20));
+        Concepto.setMinimumSize(new java.awt.Dimension(72, 20));
+        Concepto.setPreferredSize(new java.awt.Dimension(72, 20));
 
         Txt_Concepto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         Txt_Concepto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -150,22 +150,22 @@ public class CREAR_FACTURAS extends javax.swing.JFrame {
         Bt_Cancelar.setText("Cancelar");
         Bt_Cancelar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(102, 102, 102), null, null));
 
-        jButton3.setText("Productos");
-        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        Productos.setText("Productos");
+        Productos.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Productos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                ProductosActionPerformed(evt);
             }
         });
 
-        Select_productos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Select_productos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mantenimiento Preventivo", "Mantenimiento Correctivo", "Mantenimiento Predictivo", "Overhaull", "Revision", "Inspeccion", " " }));
         Select_productos.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Bt_Agregar.setText("Agregar");
         Bt_Agregar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Descripcion.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Descripcion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -173,7 +173,7 @@ public class CREAR_FACTURAS extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField7)
+                .addComponent(Descripcion)
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
@@ -213,15 +213,15 @@ public class CREAR_FACTURAS extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Productos, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Select_productos, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Concepto, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
                         .addComponent(Txt_Concepto))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Consecutivo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Txt_Consecutivo)))
                 .addContainerGap())
@@ -245,20 +245,20 @@ public class CREAR_FACTURAS extends javax.swing.JFrame {
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Consecutivo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Txt_Consecutivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Concepto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Txt_Concepto, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
+                    .addComponent(Productos)
                     .addComponent(Select_productos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Bt_Agregar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Valor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -304,9 +304,9 @@ public class CREAR_FACTURAS extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void ProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProductosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_ProductosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -325,21 +325,23 @@ public class CREAR_FACTURAS extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CREAR_FACTURAS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CREAR_FACTURAS_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CREAR_FACTURAS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CREAR_FACTURAS_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CREAR_FACTURAS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CREAR_FACTURAS_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CREAR_FACTURAS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CREAR_FACTURAS_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CREAR_FACTURAS().setVisible(true);
+                new CREAR_FACTURAS_OK().setVisible(true);
             }
         });
     }
@@ -348,10 +350,14 @@ public class CREAR_FACTURAS extends javax.swing.JFrame {
     private javax.swing.JButton Bt_Agregar;
     private javax.swing.JButton Bt_Cancelar;
     private javax.swing.JButton Bt_Guardar;
+    private javax.swing.JLabel Concepto;
+    private javax.swing.JLabel Consecutivo;
+    private javax.swing.JTextField Descripcion;
     private javax.swing.JLabel Direccion;
     private javax.swing.JLabel Fecha_Vencimiento;
     private javax.swing.JLabel Fecha_facturacion;
     private javax.swing.JLabel Nombre;
+    private javax.swing.JButton Productos;
     private javax.swing.JComboBox<String> Select_productos;
     private javax.swing.JLabel Telefono;
     private javax.swing.JTextField Txt_Concepto;
@@ -363,12 +369,8 @@ public class CREAR_FACTURAS extends javax.swing.JFrame {
     private javax.swing.JTextField Txt_Telefono;
     private javax.swing.JTextField Txt_Valor;
     private javax.swing.JLabel Valor;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField7;
     // End of variables declaration//GEN-END:variables
 }
