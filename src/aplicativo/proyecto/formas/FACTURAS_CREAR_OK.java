@@ -8,12 +8,12 @@ package aplicativo.proyecto.formas;
  *
  * @author santa
  */
-public class CREAR_FACTURAS_OK extends javax.swing.JFrame {
+public class FACTURAS_CREAR_OK extends javax.swing.JFrame {
 
     /**
      * Creates new form FACTURAS
      */
-    public CREAR_FACTURAS_OK() {
+    public FACTURAS_CREAR_OK() {
         initComponents();
     }
 
@@ -325,14 +325,18 @@ public class CREAR_FACTURAS_OK extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CREAR_FACTURAS_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FACTURAS_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CREAR_FACTURAS_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FACTURAS_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CREAR_FACTURAS_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FACTURAS_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CREAR_FACTURAS_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FACTURAS_CREAR_OK.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -341,7 +345,7 @@ public class CREAR_FACTURAS_OK extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CREAR_FACTURAS_OK().setVisible(true);
+                new FACTURAS_CREAR_OK().setVisible(true);
             }
         });
     }
