@@ -30,7 +30,7 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         Consecutivo = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        Txt_Consecutivo = new javax.swing.JTextField();
         Maquinas = new javax.swing.JLabel();
         Solicitante = new javax.swing.JLabel();
         Txt_Solicitante = new javax.swing.JTextField();
@@ -40,8 +40,8 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         Txt_FSolicitud = new javax.swing.JFormattedTextField();
         F_Atencion = new javax.swing.JLabel();
         Txt_FAtencion = new javax.swing.JFormattedTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        Bt_Guardar = new javax.swing.JButton();
+        Bt_Cancelar = new javax.swing.JButton();
         Area_Maquina = new javax.swing.JButton();
         Select_Maquinas = new javax.swing.JComboBox<>();
         Bt_Agregar = new javax.swing.JButton();
@@ -64,8 +64,13 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         Consecutivo.setText("Consecutivo");
         Consecutivo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_Consecutivo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Txt_Consecutivo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Txt_Consecutivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Txt_ConsecutivoActionPerformed(evt);
+            }
+        });
 
         Maquinas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Maquinas.setText("Maquina");
@@ -114,14 +119,14 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
         Txt_FAtencion.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getDateInstance(java.text.DateFormat.LONG))));
         Txt_FAtencion.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
-        jButton1.setText("Guardar");
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(102, 102, 102), null, null));
-        jButton1.setMaximumSize(new java.awt.Dimension(50, 20));
-        jButton1.setMinimumSize(new java.awt.Dimension(50, 20));
-        jButton1.setPreferredSize(new java.awt.Dimension(50, 20));
+        Bt_Guardar.setText("Guardar");
+        Bt_Guardar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(102, 102, 102), null, null));
+        Bt_Guardar.setMaximumSize(new java.awt.Dimension(50, 20));
+        Bt_Guardar.setMinimumSize(new java.awt.Dimension(50, 20));
+        Bt_Guardar.setPreferredSize(new java.awt.Dimension(50, 20));
 
-        jButton2.setText("Cancelar");
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(102, 102, 102), null, null));
+        Bt_Cancelar.setText("Cancelar");
+        Bt_Cancelar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(102, 102, 102), null, null));
 
         Area_Maquina.setText("Area");
         Area_Maquina.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -179,7 +184,7 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(Consecutivo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField2))
+                        .addComponent(Txt_Consecutivo))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(Area_Maquina, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
@@ -192,9 +197,9 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
             .addComponent(Bt_Agregar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(105, 105, 105)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Bt_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(Bt_Cancelar)
                 .addGap(142, 142, 142))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
@@ -222,7 +227,7 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Consecutivo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Txt_Consecutivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Maquinas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -253,8 +258,8 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
                     .addComponent(Txt_FAtencion, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(64, 64, 64)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2))
+                    .addComponent(Bt_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Bt_Cancelar))
                 .addGap(26, 26, 26))
         );
 
@@ -275,6 +280,10 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
     private void Area_MaquinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Area_MaquinaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Area_MaquinaActionPerformed
+
+    private void Txt_ConsecutivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_ConsecutivoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txt_ConsecutivoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -318,6 +327,8 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
     private javax.swing.JButton Area_Maquina;
     private javax.swing.JLabel Area_Solicitante;
     private javax.swing.JButton Bt_Agregar;
+    private javax.swing.JButton Bt_Cancelar;
+    private javax.swing.JButton Bt_Guardar;
     private javax.swing.JLabel Consecutivo;
     private javax.swing.JLabel F_Atencion;
     private javax.swing.JLabel F_Solicitud;
@@ -325,16 +336,14 @@ public class CREAR_PROGRAMACION extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> Select_Maquinas;
     private javax.swing.JLabel Solicitante;
     private javax.swing.JTextField Txt_Area_Solicitante;
+    private javax.swing.JTextField Txt_Consecutivo;
     private javax.swing.JTextField Txt_Descripcion;
     private javax.swing.JFormattedTextField Txt_FAtencion;
     private javax.swing.JFormattedTextField Txt_FSolicitud;
     private javax.swing.JTextField Txt_Solicitante;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
