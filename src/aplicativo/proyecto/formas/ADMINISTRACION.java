@@ -39,6 +39,7 @@ public class ADMINISTRACION extends javax.swing.JFrame {
         Principal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Principal.setPreferredSize(new java.awt.Dimension(2000, 2000));
 
+        Campo_Busqueda.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Campo_Busqueda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Campo_BusquedaActionPerformed(evt);
@@ -46,6 +47,7 @@ public class ADMINISTRACION extends javax.swing.JFrame {
         });
 
         Buscar.setText("Buscar");
+        Buscar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Buscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BuscarActionPerformed(evt);
@@ -53,9 +55,11 @@ public class ADMINISTRACION extends javax.swing.JFrame {
         });
 
         Crear.setText("Crear");
+        Crear.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Modificar.setText("Modificar");
         Modificar.setAutoscrolls(true);
+        Modificar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         Slogistic221.setIcon(new javax.swing.ImageIcon(getClass().getResource("/aplicativo/proyecto/formas/SLOGISTIC221.jpg"))); // NOI18N
 
@@ -75,20 +79,18 @@ public class ADMINISTRACION extends javax.swing.JFrame {
                     .addGroup(PrincipalLayout.createSequentialGroup()
                         .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(PrincipalLayout.createSequentialGroup()
-                                .addGap(210, 210, 210)
-                                .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(Buscar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(Crear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(Modificar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGap(41, 41, 41)
+                                .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(Campo_Busqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Modulo_Administracion, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(PrincipalLayout.createSequentialGroup()
-                                .addGap(60, 60, 60)
-                                .addComponent(Campo_Busqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 10, Short.MAX_VALUE)))
+                                .addGap(201, 201, 201)
+                                .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Crear, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Modificar))))
+                        .addGap(0, 29, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(PrincipalLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
-                .addComponent(Modulo_Administracion, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PrincipalLayout.setVerticalGroup(
             PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -105,7 +107,7 @@ public class ADMINISTRACION extends javax.swing.JFrame {
                 .addComponent(Crear)
                 .addGap(18, 18, 18)
                 .addComponent(Modificar)
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addContainerGap(85, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
